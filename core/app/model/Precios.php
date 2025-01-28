@@ -2,6 +2,7 @@
 
 
 class Precios {
+    public $id;
     public $pcc;
     public $pcd;
     public $pvc;

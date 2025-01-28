@@ -89,7 +89,7 @@ $top10CompraRepuestos = ReportesData::getLast10ItemBuyForType(3);
                               <div class="text-body-secondary text-uppercase fw-semibold small">Inventario</div>
                             </div>
                           </div>
-                          <div class="card-footer px-3 py-2"><a class="btn-block text-body-secondary d-flex justify-content-between align-items-center text-decoration-none" href="./index.php?view=producto/celulares"><span class="small fw-semibold">Repuestos</span>
+                          <div class="card-footer px-3 py-2"><a class="btn-block text-body-secondary d-flex justify-content-between align-items-center text-decoration-none" href="./index.php?view=producto/repuestos"><span class="small fw-semibold">Repuestos</span>
                               <svg class="icon">
                                 <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-chevron-right"></use>
                               </svg></a></div>
@@ -109,7 +109,7 @@ $top10CompraRepuestos = ReportesData::getLast10ItemBuyForType(3);
                               <div class="text-body-secondary text-uppercase fw-semibold small">Inventario</div>
                             </div>
                           </div>
-                          <div class="card-footer px-3 py-2"><a class="btn-block text-body-secondary d-flex justify-content-between align-items-center text-decoration-none" href="./index.php?view=producto/repuestos"><span class="small fw-semibold">Celulares</span>
+                          <div class="card-footer px-3 py-2"><a class="btn-block text-body-secondary d-flex justify-content-between align-items-center text-decoration-none" href="./index.php?view=producto/celulares"><span class="small fw-semibold">Celulares</span>
                               <svg class="icon">
                                 <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-chevron-right"></use>
                               </svg></a></div>
