@@ -74,11 +74,11 @@ public static function getProducts($query,$query2,$type) {
             }
            
         }else if ($type==3){
-            if(intval($query) != 0 && trim($query2) != ''){
-                $where .= " (category_id='".$query."') OR ( marca LIKE '%".$query2."%' OR modelo LIKE '%".$query2."%') AND "; 
-            }else if(intval($query) != 0 && trim($query2) == ''){
+            if(intval($query) > 0 && !empty($query2)){
+                $where .= " (category_id='".$query."') AND ( marca LIKE '%".$query2."%' OR modelo LIKE '%".$query2."%') AND "; 
+            }else if(intval($query) > 0 && empty($query2)){
                 $where .= " category_id='".$query."'  AND "; 
-            }else if(intval($query) == 0 && trim($query2) != ''){
+            }else if(intval($query) == 0 && !empty($query2)){
                 $where .= " ( marca LIKE '%".$query2."%' OR modelo LIKE '%".$query2."%') AND "; 
             }
         }else if ($type==4) {

@@ -157,6 +157,8 @@ function getAllTecnicos($id){
 
 
 function getReparacionData(){
+  loadCartVentas();
+  loadTotalCosto();
   const url = new URL(window.location.href);
   const $id = url.searchParams.get('id');
   $.get("./index.php?action=reparacion/reparacion-controller&method=get-reparacion-data&id="+$id, function(data, status){
@@ -177,8 +179,7 @@ function getReparacionData(){
     $("#fecha").val(data.fecha);
 
     $("#cliente-a").val(data.cliente);
-    loadCartVentas();
-    loadTotalCosto();
+    
 
   });
 }
@@ -248,6 +249,8 @@ $("#reparacionForm").submit(function(e){
   formData.append("vendedor", parseInt($("#vendedor-venta").find(':selected').val()));
   formData.append("tecnico", parseInt($("#tecnico").find(':selected').val()));
   formData.append("descripcion", $("#descripcion").val());
+  formData.append("costo_c", $("#pvc").val());
+  formData.append("costo_d", $("#pvd").val());
   formData.append("total_c", $("#total_c").val());
   formData.append("total_d", $("#total_d").val());
   formData.append("ganancia_c", $("#ganancia_c").val());

@@ -87,9 +87,9 @@
                             echo '<td>'.$v['tecnico'].'</td>';
                             echo '<td>'.$v['descripcion'].'</td>';
                             echo '<td>'.$v['repuesto'].'</td>';
-                            echo '<td  class="text-end"><span class="badge" style="color:blue;">C$ '.number_format(floatval($v['costo_repuesto_c']),2,'.',',').'</span><br><span class="badge" style="color:green;">$ '.number_format(floatval($v['costo_repuesto_d']),2,'.',',').'</span></td>';
-                            echo '<td  class="text-end"><span class="badge" style="color:blue;">C$ '.number_format(floatval($v['total_c']),2,'.',',').'</span><br><span class="badge" style="color:green;">$ '.number_format(floatval($v['total_c']),2,'.',',').'</span></td>';
-                            echo '<td  class="text-end"><span class="badge" style="color:blue;">C$ '.number_format(floatval($v['ganancia_c']),2,'.',',').'</span><br><span class="badge" style="color:green;">$ '.number_format(floatval($v['ganancia_c']),2,'.',',').'</span></td>';
+                            echo '<td  class="text-end"><span class="badge" style="color:blue;">C$ '.$v['costo_repuesto_c'].'</span><br><span class="badge" style="color:green;">$ '.$v['costo_repuesto_d'].'</span></td>';
+                            echo '<td  class="text-end"><span class="badge" style="color:blue;">C$ '.$v['total_c'].'</span><br><span class="badge" style="color:green;">$ '.$v['total_d'].'</span></td>';
+                            echo '<td  class="text-end"><span class="badge" style="color:blue;">C$ '.$v['ganancia_c1'].'</span><br><span class="badge" style="color:green;">$ '.$v['ganancia_d1'].'</span></td>';
                             echo '<td>'.$v['estado'].'</td>';
                             echo '<td>'.$v['fecha'].'</td>';
                            if(Roles::hasAdmin()){echo '<td><button type="button" class="btn  btn-danger text-white btn-xs" onclick="deleteReparacion('.$v['id'].')"><svg class="icon"><use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-trash"></use></svg></button></td>';}else{ echo '<td>*-*</td>';};

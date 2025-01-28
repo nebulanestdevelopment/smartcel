@@ -3,7 +3,7 @@
 Session::isLogin();
 $data= [];
 if(isset($_POST)){   
-    $data = ComprasData::getProducts($_POST['categoria'],$_POST['modelo'],3);
+    $data = ComprasData::getProducts($_POST['categoria'],trim($_POST['modelo']),3);
 ?>
 <h4>Resultados de la Busqueda para Repuestos</h4>
 <div class="table-responsive">

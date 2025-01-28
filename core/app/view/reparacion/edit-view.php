@@ -115,18 +115,18 @@ unset($_SESSION["cart-repair"]);
                 <div class="col-sm-8 row">
                     <div class="input-group col">
                         <span class="input-group-text">C$</span>
-                        <input type="text" class="form-control" id="pvc" name="pvc" placeholder="00.00" onkeyup="validateFloat(event, this),changeDolar('pvc','pvd')" value="0" readonly>
+                        <input type="text" class="form-control" id="pvc" name="pvc" placeholder="00.00" onkeyup="validateFloat(event, this),changeDolar('pvc','pvd')" value="0" >
                     </div>
                     <div class="input-group col">
                         <span class="input-group-text">$</span>
-                        <input type="text" class="form-control" id="pvd" name="pvd" placeholder="00.00" onkeyup="validateFloat(event, this),changeCordoba('pvd','pvc')" value="0" readonly>
+                        <input type="text" class="form-control" id="pvd" name="pvd" placeholder="00.00" onkeyup="validateFloat(event, this),changeCordoba('pvd','pvc')" value="0" >
                     </div>
 
                 </div>
           </div>
 
           <div class="row mb-3">
-                <label for="nombre" class="col-sm-3 col-form-label" style="text-align: right;">Total de la reparacion</label>
+                <label for="nombre" class="col-sm-3 col-form-label" style="text-align: right;">Costo de la reparacion</label>
                 <div class="col-sm-8 row">
                     <div class="input-group col">
                         <span class="input-group-text">C$</span>

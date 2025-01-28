@@ -93,6 +93,9 @@ $_POST['discount_d'] = $desc_d;
  $tecnico_data = UsuarioData::getById(intval($_POST['tecnico'])); 
  $tecnico = $tecnico_data['nombre'].' '.$tecnico_data['apellido'];
 
+ $costo_c = (isset($_POST["costo_c"]))?doubleval($_POST["costo_c"]):0;
+ $costo_d = (isset($_POST["costo_d"]))?doubleval($_POST["costo_d"]):0;
+
   $r = new ReparacionData();
   $r->id = 0;
   $r->status = 0;
@@ -184,6 +187,8 @@ $_POST['discount_d'] = $desc_d;
 
  $tecnico_data = UsuarioData::getById(intval($_POST['tecnico'])); 
  $tecnico = $tecnico_data['nombre'].' '.$tecnico_data['apellido'];
+ $costo_c = (isset($_POST["costo_c"]))?doubleval($_POST["costo_c"]):0;
+ $costo_d = (isset($_POST["costo_d"]))?doubleval($_POST["costo_d"]):0;
 
   $r = new ReparacionData();
   $r->id = filter_var($_POST["idr"], FILTER_VALIDATE_INT);;

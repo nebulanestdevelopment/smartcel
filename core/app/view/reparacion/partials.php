@@ -209,6 +209,8 @@ $("#reparacionForm").submit(function(e){
   formData.append("vendedor", parseInt($("#vendedor-venta").find(':selected').val()));
   formData.append("tecnico", parseInt($("#tecnico").find(':selected').val()));
   formData.append("descripcion", $("#descripcion").val());
+  formData.append("costo_c", $("#pvc").val());
+  formData.append("costo_d", $("#pvd").val());
   formData.append("total_c", $("#total_c").val());
   formData.append("total_d", $("#total_d").val());
   formData.append("ganancia_c", $("#ganancia_c").val());
